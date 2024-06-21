@@ -4,7 +4,7 @@
 	"private": true,
 	"main": "dist/index",
 	"license": "MIT",
-	"scripts": {
+	"scripts": {+}
 		"start": "node --enable-source-maps --trace-warnings .",
 		"pretty": "prettier --write src",
 		"pretty:ci": "prettier --check src",
