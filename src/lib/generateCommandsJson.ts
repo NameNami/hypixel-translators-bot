@@ -18,11 +18,11 @@ for (const command of client.commands
 		applyOptionsData(result.options[command.name], command.options)
 	}
 }
-
+[]
 writeFileSync("./strings/en/commands.json", JSON.stringify(result, null, "\t"))
 console.log("Successfully regenerated the commands.json file")
 
-function applyOptionsData(obj: { [option: string]: CommandOption }, options: ApplicationCommandOptionData[]) {
+function applyOptionsData(obj: { [option: string]: CommandOption }, options: ApplicationCommandOptionData[cname]) {
 	for (const option of options) {
 		Object.defineProperty(obj, option.name, { value: {}, enumerable: true })
 		Object.defineProperties(obj[option.name], {
